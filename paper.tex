@@ -1,0 +1,142 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{iftex}
+\ifxetex
+    \usepackage{fontspec} % XelaTeX on
+    \usepackage{fontspec} % XelaTeX on
+    % Install Tex Gyre fonts with Home-Manager / NixOS; or manually and set the path for it to work
+    \setmainfont{texgyretermes}[
+        Extension = .otf,
+        UprightFont = *-regular,
+        BoldFont = *-bold,
+        ItalicFont = *-italic,
+        BoldItalicFont = *-bolditalic,
+    ]
+\else
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+\fi
+
+\usepackage[backend=biber,style=ieee,natbib,mincitenames=1,maxcitenames=1,uniquelist]{biblatex} %added
+\addbibresource{resources/bibliography.bib} %added
+\renewcommand*{\bibfont}{\small}
+
+\usepackage{balance}
+
+
+\begin{document}
+
+\title{Over-engineered scientific paper writing: a mock file}
+
+
+\author{
+  \IEEEauthorblockN{L\'eo Lavaur}
+  \IEEEauthorblockA{\textit{@phdcybersec} \\
+  contact@llvr.re}
+}
+
+\maketitle
+
+\begin{abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec rutrum turpis, congue bibendum
+tortor. Donec varius ante nec mauris pretium ultricies. Nullam eu lorem rutrum dolor tempus
+condimentum nec vel nunc. Sed lectus massa, porta non suscipit at, tincidunt quis mi. Integer
+posuere finibus nulla, nec scelerisque magna. 
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut nec egestas nisi. Ut condimentum
+orci eros, accumsan malesuada est hendrerit id. Vivamus sit amet dui consectetur, tincidunt eros
+non, pellentesque nunc. 
+\end{abstract}
+
+\begin{IEEEkeywords}
+  scientific writing, git, latex, workflow
+\end{IEEEkeywords}
+
+
+
+\section{Quisque ac leo ornare}
+
+Suspendisse efficitur mollis augue non euismod. Curabitur pharetra eros justo, sollicitudin faucibus
+nulla commodo in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+mus. Ut tempor sem eu massa fermentum dapibus. Donec venenatis risus sed justo pulvinar euismod. Ut
+imperdiet, sapien id efficitur bibendum, sapien nibh malesuada mauris, ullamcorper aliquam purus
+quam at lacus. Cras sit amet massa eu ante consectetur dapibus ac in ex. Sed id massa dictum,
+eleifend nisi a, maximus urna. Suspendisse ornare aliquet lacus, sit amet ornare nisl facilisis ac.
+Cras sit amet lacinia urna, id pulvinar magna. Aliquam vel urna eu libero placerat maximus in sed
+magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam molestie neque a
+interdum molestie \cite{Doe2020}.
+
+Quisque imperdiet scelerisque massa, eget dictum justo faucibus non. Pellentesque finibus maximus
+urna a posuere. Fusce viverra enim quis lectus vestibulum, eget interdum tellus ultricies. Maecenas
+quis placerat nunc, ut pharetra lorem. In in tincidunt odio. Vivamus at risus ut velit posuere
+consequat ac ultricies nisl \cite{Nadir2012}. Morbi ante mi, dignissim ut ornare et, malesuada vitae tortor.
+Vestibulum mi urna, vestibulum non blandit eget, ultricies ut ipsum. Sed sed massa posuere,
+pellentesque lectus ut, volutpat eros. Curabitur congue dapibus libero. Morbi aliquet libero eget
+ultrices convallis. In maximus tellus quam, porta convallis justo egestas a. Praesent nibh nunc,
+bibendum vitae quam nec, tempus efficitur magna. Praesent est nisi, sollicitudin id nunc sed,
+aliquet tempor tellus. Ut vel molestie orci, blandit mattis diam.
+
+Praesent eleifend justo at porta ullamcorper. Pellentesque non accumsan lorem. Phasellus tincidunt
+elit nisl, eu vehicula urna consectetur sit amet. Cras mauris nisl, malesuada sit amet malesuada
+quis, lacinia et nisi \cite{SW1977}. Etiam quis nulla egestas, vehicula odio non, auctor urna. Nulla at faucibus
+libero. Nulla varius erat odio, non scelerisque enim dignissim in.
+
+Morbi justo urna, ornare congue mauris eu, scelerisque porttitor eros. Nulla facilisi. Suspendisse
+varius suscipit mi, ac suscipit risus tempus sed. Aliquam vulputate velit ac tempor suscipit. In
+egestas eros vitae risus luctus luctus. Quisque ac leo ornare, blandit nulla ut, scelerisque sapien.
+Nulla id tincidunt tortor. Donec gravida neque augue. Sed viverra porttitor lorem quis vestibulum.
+Duis fringilla justo id pharetra hendrerit. Donec efficitur leo in odio hendrerit convallis.
+Vestibulum a tincidunt purus.
+
+Duis ultricies varius mauris quis rhoncus. Vivamus nec auctor mi, quis interdum est. Quisque leo
+lorem, imperdiet vitae nibh at, dignissim blandit mauris. Mauris at nunc elit. Sed eros lacus,
+fringilla ut faucibus aliquam, tristique in mi. Sed efficitur, ex nec pretium malesuada, nunc massa
+convallis sem, at facilisis lorem nibh et metus. Aenean ac convallis magna, vitae suscipit tellus.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin cursus
+ante sed convallis cursus. Proin cursus velit vel sem mollis feugiat. Fusce sollicitudin tortor ac
+urna euismod facilisis quis sit amet risus. Vestibulum at hendrerit nisi. Vestibulum id eleifend
+erat, in pulvinar lectus.
+
+Sed eleifend ultrices nunc a sodales. Cras interdum eu est vel lobortis. Nam tincidunt nibh sed leo
+venenatis aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+turpis egestas. Suspendisse pellentesque gravida sapien, nec convallis diam rutrum et. Nulla porta
+mi vitae purus ornare mattis. Cras dictum a elit non pharetra.
+
+\section{Curabitur nec odio dui}
+
+Cras pretium ullamcorper lacus, eget venenatis nisl placerat sit amet. Etiam mollis ultrices
+lobortis. Mauris et pulvinar nisi. Praesent nec justo diam. Suspendisse in quam pretium, lacinia sem
+sit amet, condimentum quam. Vestibulum mattis odio quis orci blandit, eu faucibus tellus mattis.
+Mauris pharetra purus at turpis sagittis sollicitudin. Nulla at laoreet libero. Integer eu
+vestibulum ex, id tempor orci. Nulla euismod accumsan ornare. Donec egestas sapien cursus mi
+facilisis, non ultricies augue accumsan. Proin libero nisi, scelerisque nec eleifend quis,
+sollicitudin a erat. Mauris quis sodales purus.
+
+Aenean sodales justo eros, vitae pharetra ligula malesuada eu. Cras pharetra porta risus sit amet
+vulputate. Praesent facilisis fringilla fringilla. Orci varius natoque penatibus et magnis dis
+parturient montes, nascetur ridiculus mus. Curabitur nec odio dui. Ut ac nisi eget urna tincidunt
+aliquam facilisis ut mauris. Phasellus posuere egestas porttitor. Proin lacus ex, tempor ac
+ullamcorper elementum, fermentum nec tellus.
+
+Nunc sem metus, mattis eget tellus blandit, rutrum sollicitudin nibh. Sed bibendum at lectus eu
+feugiat. Ut tincidunt mollis laoreet. Sed viverra quam sed sapien cursus, id cursus nulla porta.
+Donec at nunc mattis nunc pulvinar venenatis eu eu lorem. In mollis metus vitae magna eleifend,
+vitae viverra nibh placerat. Maecenas blandit sodales arcu, eget faucibus arcu vestibulum ac. Nam
+eget est justo. Donec ullamcorper vestibulum ante, vitae pellentesque velit iaculis sit amet.
+Praesent eu rhoncus sapien, in pharetra quam. Fusce lacinia euismod lectus, ut auctor mauris
+fermentum ac. Sed condimentum lorem eu ipsum efficitur venenatis. Pellentesque sodales vulputate
+tellus.
+
+Etiam diam tortor, vestibulum vitae nunc at, ultrices cursus nisl. Nullam ac interdum lectus. Aenean
+vulputate sed eros nec scelerisque. Fusce pharetra sapien eu elit tristique, a ullamcorper felis
+rhoncus. Sed eu nisl nec enim cursus viverra. Sed cursus consectetur nibh. Curabitur lobortis
+blandit massa sed lobortis. In hac habitasse platea dictumst. In nulla tortor, vulputate et libero
+vitae, auctor lacinia justo. Suspendisse et nunc vitae lectus scelerisque iaculis. Proin luctus,
+lacus consequat auctor pretium, lacus libero molestie diam, id pharetra nibh lacus in mi. 
+
+
+\balance
+
+\printbibliography
+
+\end{document}
